@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>PacMan</title>
+</head>
+<style type="text/css">
+	
+	body
+	{
+		background: #000000;
+	}
+	#container
+	{
+
+		width: 930px ;
+
+		height: 350px ;
+		
+		/*border: 5px black solid ;*/
+
+		margin-left: 220px;
+
+		margin-top: 100px;
+
+		background: #000000;
+
+		/*position: relative;*/
+
+	}
+	#container img{
+		/*top: -4px;*/
+		margin-top: -4px;
+	}
+
+	#head 
+
+	{
+		width: 930px ;
+
+		height: 100px ;
+		
+		border: 5px black solid ;
+
+		margin-top: 50px;
+
+		margin-left: 230px;
+		
+		background: #000000 ;
+	
+		color: #ffffff;	
+		
+		text-indent: 0px;
+
+		font-size: 20px;
+
+	}
+
+	.trr
+	{
+		width: 700px;	
+	}
+
+	#restGame
+
+	{
+
+
+		height: 33px;
+	}
+
+	table 
+	{
+		 border-spacing: 50px 0px;
+
+		 margin-left: 80px;
+	}
+
+	#intro
+	{
+		width: 100px;
+
+		height: 100px;
+	}
+
+
+</style>       
+<body>
+
+<audio id="deadMusic" >
+		<source src="music/dead.mp3" type="audio/mpeg">
+</source>
+
+</audio>
+<div id = head>
+	<table>
+		<tr id="pointsLevel">
+			<td class="trr" id = "points"><img id = "imgp " src=""></td> 
+			<td class="trr"></td> 
+			<td class="trr" id = "level"></td>
+		</tr>
+	
+		<tr>
+			<td class="trr" id ="health"><img id = "imgh " src=""></img></td>
+			<td class="trr" ><img id="intro" src="img/pacman-151558_1280.png"></td>
+			<td class="trr" id = "timer"></td>
+			
+		</tr>
+
+		
+
+		<tr >
+		<td><button id="restGame">Rest Game </button></td>
+		<td></td>
+		<td><button id="mute"> <img id="muteImage" src="img/volume-512.png"/></button></td>
+
+		</tr>
+	</table>
+</div>
+<div id="container">
+</div>
+
+<!--<script type="text/javascript" src="js/js.js"></script>-->
+
+<!--<script type="text/javascript" src="js/faceman.js"></script>-->
+
+<!--<script type="text/javascript" src="js/obj.js"></script>-->
+
+<!-- here Trial to run simble game -->
+
+<!-- Header -->
+<script type="text/javascript" src="js/pointsLevel.js"></script>
+<!-- create objects -->
+
+<script type="text/javascript" src="js/obj.js"></script>
+
+<!-- Drow Board -->
+<script type="text/javascript" src="js/draw_board.js"></script> 
+
+
+
+<!-- Just Simple Running -->
+<script type="text/javascript" src="js/simpleRun.js"></script>
+
+<!-- End of text -->
+
+<!--<script type="text/javascript" src="js/pointsHealth.js"></script>-->
+
+</body>
+</html>
